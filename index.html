@@ -31,10 +31,23 @@
             Když tě trefí meteorit tak umřeš a začínáš od začátku.
         </p>
 
-        <button>Stáhnout hru</button>
+<button onclick="toggleDiagram()">Diagram</button>
 
-        
-        <img src="Diagram Hra.drawio.png" alt="Diagram hry" style="width:100%; margin-top:20px;">
+<div id="diagramBox" style="display:none;">
+    <img src="Diagram Hra.drawio.png" alt="Diagram hry" style="width:100%; margin-top:20px;">
+</div>
+
+<script>
+function toggleDiagram() {
+    const box = document.getElementById("diagramBox");
+
+    if (box.style.display === "none") {
+        box.style.display = "block";
+    } else {
+        box.style.display = "none";
+    }
+}
+</script>
 
     </div>
 
